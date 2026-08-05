@@ -30,7 +30,7 @@ This repository was migrated from the original **Visual Studio 2022 / VisualGDB*
 
 - STM32F103C8T6 Blue Pill
 - LT7680 TFT controller
-- 4.3" TFT LCD
+- TFT LCD
 - Custom interface PCB
 
 ## Project Structure
