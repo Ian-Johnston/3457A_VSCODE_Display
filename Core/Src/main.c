@@ -225,11 +225,10 @@ int main(void) {
 
 		DisplayMain();
 
-		//HAL_Delay(10);
-
 		DisplayAnnunciators();
 
-		//HAL_Delay(10);
+		TEST1++;
+
 	}
 
 }
