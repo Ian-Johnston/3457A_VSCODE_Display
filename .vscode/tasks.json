@@ -45,6 +45,22 @@
                 "isDefault": false
             },
             "problemMatcher": []
+        },
+        {
+            "label": "Upload to GitHub",
+            "type": "shell",
+            "command": "git add .; git commit -m \"${input:commitMessage}\"; git push",
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "problemMatcher": []
+        }
+    ],
+    "inputs": [
+        {
+            "id": "commitMessage",
+            "type": "promptString",
+            "description": "Enter GitHub commit message"
         }
     ]
 }
