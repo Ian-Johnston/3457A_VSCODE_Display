@@ -221,7 +221,7 @@ int main(void) {
 
 		DisplayAnnunciators();
 
-		TEST1++;
+		//TEST1++;		// for testing live watch
 
 	}
 
