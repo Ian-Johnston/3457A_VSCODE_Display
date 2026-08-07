@@ -72,3 +72,7 @@
 319	669	8076199292052976	CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c.obj	572f881fabe6d5c3
 336	777	8076199292222406	CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj	1bbe17f18a52fd43
 199	483	8077291525456583	BluePill_Project	3f05337f15a93a45
+2	211	8077944627107391	CMakeFiles/BluePill_Project.dir/Core/Src/main.c.obj	bb855e7930f26110
+212	529	8077944629195949	BluePill_Project	3f05337f15a93a45
+2	190	8077945743697016	CMakeFiles/BluePill_Project.dir/Core/Src/main.c.obj	bb855e7930f26110
+190	463	8077945745581697	BluePill_Project	3f05337f15a93a45

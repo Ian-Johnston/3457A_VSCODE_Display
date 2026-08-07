@@ -33,7 +33,7 @@
  */
 
 
-/* Includes ------------------------------------------------------------------*/
+//******************************************************************************
 #include "main.h"
 #include "dma.h"
 #include "spi.h"
@@ -60,18 +60,34 @@ volatile uint8_t TEST1 = 0;
 volatile uint8_t TEST2 = 0;
 volatile uint8_t TEST3 = 0;
 
-#define MAX_BUFFER_SIZE 256  // Define the size of the buffer
+#define MAX_BUFFER_SIZE 256 						// Define the size of the buffer
 
 volatile uint32_t debugO2Callback = 0;
 
-#define DISPLAY_LENGTH 12  // Number of characters in the main display
-
-char displayString[DISPLAY_LENGTH + 1];  // +1 for null-terminator
+#define DISPLAY_LENGTH 12							// Number of characters in the main display
+char displayString[DISPLAY_LENGTH + 1];				// +1 for null-terminator
 
 uint8_t isaState = 0;
 uint8_t inaState = 0;
 
 extern volatile uint8_t logReady;
+
+volatile uint8_t SPI1_TX_completed_flag = 1;		// Flag indicating finish of SPI transmission to OLED
+volatile uint8_t Init_Completed_flag = 0;			// Flag indicating finish of start-up initialization
+void SystemClock_Config(void);						// Private function prototypes
+
+// BluePill clone determination/tests
+volatile uint32_t dbg_sysclk_hz = 0;
+volatile uint32_t dbg_hclk_hz = 0;
+volatile uint32_t dbg_pclk1_hz = 0;
+volatile uint32_t dbg_pclk2_hz = 0;
+volatile uint32_t dbg_clock_source = 0;
+volatile uint32_t dbg_hse_ready = 0;
+volatile uint32_t dbg_pll_ready = 0;
+volatile uint32_t dbg_loop_count = 0;
+volatile uint32_t dbg_loop_per_sec = 0;
+volatile uint32_t dbg_loop_last_ms = 0;
+volatile uint32_t dbg_loop_test_done = 0;
 
 //******************************************************************************
 // HP Symbols
@@ -92,30 +108,6 @@ extern volatile uint8_t logReady;
 #define Dn 0x1000
 #define Dr 0x2000
 
-// BluePill clone determination/tests
-volatile uint32_t dbg_sysclk_hz = 0;
-volatile uint32_t dbg_hclk_hz = 0;
-volatile uint32_t dbg_pclk1_hz = 0;
-volatile uint32_t dbg_pclk2_hz = 0;
-volatile uint32_t dbg_clock_source = 0;
-volatile uint32_t dbg_hse_ready = 0;
-volatile uint32_t dbg_pll_ready = 0;
-volatile uint32_t dbg_loop_count = 0;
-volatile uint32_t dbg_loop_per_sec = 0;
-volatile uint32_t dbg_loop_last_ms = 0;
-volatile uint32_t dbg_loop_test_done = 0;
-
-
-//******************************************************************************
-
-// Flag indicating finish of SPI transmission to OLED
-volatile uint8_t SPI1_TX_completed_flag = 1;
-
-// Flag indicating finish of start-up initialization
-volatile uint8_t Init_Completed_flag = 0;
-
-// Private function prototypes
-void SystemClock_Config(void);
 
 //******************************************************************************
 
