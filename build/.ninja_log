@@ -1,12 +1,12 @@
 # ninja log v7
 37	148	8076199289228343	CMakeFiles/BluePill_Project.dir/Core/Src/sysmem.c.obj	96b6b02726e5654
 33	172	8076199289186047	CMakeFiles/BluePill_Project.dir/Core/Src/syscalls.c.obj	72b14e03adf24929
-10	200	8076199288965183	CMakeFiles/BluePill_Project.dir/Core/Src/gpio.c.obj	183c9ba239f82e7f
+15	244	8163707643246694	CMakeFiles/BluePill_Project.dir/Core/Src/gpio.c.obj	183c9ba239f82e7f
 41	206	8076199289270149	CMakeFiles/BluePill_Project.dir/Core/Src/system_stm32f1xx.c.obj	c0e4d8441a602fa8
 6	214	8076199288920053	CMakeFiles/BluePill_Project.dir/Core/Src/dma.c.obj	7549cde80ca72ebf
 23	249	8076199289087546	CMakeFiles/BluePill_Project.dir/Core/Src/spi.c.obj	f88a6e5d055d2e85
 26	255	8076199289126197	CMakeFiles/BluePill_Project.dir/Core/Src/stm32f1xx_hal_msp.c.obj	6908c7833fde0a63
-13	261	8076199288992167	CMakeFiles/BluePill_Project.dir/Core/Src/lcd.c.obj	ad6dbbc81607c54c
+19	262	8163707643283189	CMakeFiles/BluePill_Project.dir/Core/Src/lcd.c.obj	ad6dbbc81607c54c
 29	274	8076199289149892	CMakeFiles/BluePill_Project.dir/Core/Src/stm32f1xx_it.c.obj	3797ff574330bc4e
 52	280	8076199289383836	CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.c.obj	5d4f507fc617564f
 57	286	8076199289423702	CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c.obj	f4a9ec042b5fedc9
@@ -22,7 +22,7 @@
 114	377	8076199289993042	CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.obj	b1a263f698d6e947
 44	383	8076199289300049	CMakeFiles/BluePill_Project.dir/Core/Src/timer.c.obj	f304a91b596bf3e9
 108	391	8076199289948494	CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj	873ee8b052948ad9
-1	397	8076199288874838	CMakeFiles/BluePill_Project.dir/Core/Src/display.c.obj	3e84a04b6c771567
+9	292	8163707643195121	CMakeFiles/BluePill_Project.dir/Core/Src/display.c.obj	3e84a04b6c771567
 103	405	8076199289898657	CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c.obj	fe3a0d63404979bf
 125	412	8076199290108642	CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj	edc1e446319477c6
 86	418	8076199289718695	CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj	94c50a68edb7d825
@@ -30,8 +30,8 @@
 130	431	8076199290155832	CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2s.c.obj	90a43f321a6b3d1a
 99	437	8076199289848825	CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c.obj	3ad194f597c6e0
 141	444	8076199290270034	CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_iwdg.c.obj	cf37a278f331fea3
-3	199	8077947856583574	CMakeFiles/BluePill_Project.dir/Core/Src/main.c.obj	bb855e7930f26110
-17	464	8076199289032523	CMakeFiles/BluePill_Project.dir/Core/Src/lt7680.c.obj	b35044b6d1122f4a
+25	312	8163707643347749	CMakeFiles/BluePill_Project.dir/Core/Src/main.c.obj	bb855e7930f26110
+22	312	8163707643316371	CMakeFiles/BluePill_Project.dir/Core/Src/lt7680.c.obj	b35044b6d1122f4a
 173	470	8076199290589009	CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_nand.c.obj	f6f668ca8b1e00f2
 149	476	8076199290349786	CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_mmc.c.obj	a834d3adbfec90d9
 200	483	8076199290863156	CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_nor.c.obj	c8b46585e20b8a87
@@ -71,4 +71,6 @@
 348	662	8076199292344107	CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj	a9f3f413ac803442
 319	669	8076199292052976	CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c.obj	572f881fabe6d5c3
 336	777	8076199292222406	CMakeFiles/BluePill_Project.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj	1bbe17f18a52fd43
-199	491	8077947858549080	BluePill_Project	3f05337f15a93a45
+313	771	8163707646222665	BluePill_Project	3f05337f15a93a45
+2	200	8163708350579336	CMakeFiles/BluePill_Project.dir/Core/Src/main.c.obj	bb855e7930f26110
+200	485	8163708352565435	BluePill_Project	3f05337f15a93a45
