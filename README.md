@@ -1,6 +1,6 @@
 # HP 3457A TFT Display Upgrade (VS Code)
 
-![3457A TFT display upgrade](https://raw.githubusercontent.com/Ian-Johnston/3457A_VS_Display/master/Photos/3457A.jpg)
+![3457A TFT display upgrade](Photos/3457A.jpg)
 
 This is the **Visual Studio Code** version (VS Code + CMake + GNU Arm Embedded Toolchain) of the original **Visual Studio 2022 / VisualGDB** project: [3457A_VS_Display](https://github.com/Ian-Johnston/3457A_VS_Display)
 
