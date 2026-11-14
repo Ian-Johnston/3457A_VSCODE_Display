@@ -26,6 +26,10 @@ It is built with a standard **Visual Studio Code + CMake + GNU Arm Embedded Tool
 - ST-LINK GDB Server
 - STM32Cube HAL
 
+**Webpage**
+
+https://www.ianjohnston.com/index.php/conversions/video-blog-175-3457a
+
 **Hardware**
 
 - STM32F103C8T6 Blue Pill
