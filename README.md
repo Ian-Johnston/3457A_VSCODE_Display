@@ -1,10 +1,8 @@
 # HP 3457A TFT Display Upgrade (VS Code)
 
-This repository contains the **Visual Studio Code** version of my **HP 3457A TFT Display Upgrade** firmware.
+This is the **Visual Studio Code** version (VS Code + CMake + GNU Arm Embedded Toolchain) of the original **Visual Studio 2022 / VisualGDB** project: [3457A_VS_Display](https://github.com/Ian-Johnston/3457A_VS_Display)
 
 The project replaces the original LCD display with a modern high-resolution TFT display driven by an **STM32F103C8T6 (Blue Pill)** and an **LT7680 TFT controller**.
-
-It is built with a standard **Visual Studio Code + CMake + GNU Arm Embedded Toolchain** development environment.
 
 ## Features
 
