@@ -1,4 +1,4 @@
-**HP 3457A TFT Display Upgrade (VS Code)**
+# HP 3457A TFT Display Upgrade (VS Code)
 
 This repository contains the **Visual Studio Code** version of my **HP 3457A TFT Display Upgrade** firmware.
 
@@ -6,7 +6,7 @@ The project replaces the original LCD display with a modern high-resolution TFT 
 
 It is built with a standard **Visual Studio Code + CMake + GNU Arm Embedded Toolchain** development environment.
 
-**Features**
+## Features
 
 - Full HP 3457A display decoding
 - High-resolution TFT graphics
@@ -15,7 +15,7 @@ It is built with a standard **Visual Studio Code + CMake + GNU Arm Embedded Tool
 - Modular embedded C source
 - STM32 HAL-based firmware
 
-**Development Environment**
+## Development Environment
 
 - Visual Studio Code
 - CMake
@@ -26,18 +26,18 @@ It is built with a standard **Visual Studio Code + CMake + GNU Arm Embedded Tool
 - ST-LINK GDB Server
 - STM32Cube HAL
 
-**Webpage**
+## Webpage
 
 https://www.ianjohnston.com/index.php/conversions/video-blog-175-3457a
 
-**Hardware**
+## Hardware
 
 - STM32F103C8T6 Blue Pill
 - Levetop LT7680A-R TFT controller (128Mb built-in SDRAM), driven by STM32 SPI1
 - BuyDisplay/EastRising ER-TFT3.71-1 TFT LCD, 240x960, ST7701S driver
 - Custom interface PCB
 
-**Project Structure**
+## Project Structure
 
 The project is split into a number of modules, including:
 
@@ -50,7 +50,7 @@ The project is split into a number of modules, including:
 - Timer / Display decoder
 - STM32 HAL support
 
-**Fixes - November 2026 (random pixels and display area alignment)**
+## Fixes - November 2026 (random pixels and display area alignment)
 
 1. SDRAM auto-refresh was never switched on (main cause of the random pixels). `SDRAM_Init_LT()` no longer sets REG[E4h] bit 2 first, so E0h-E3h now get the attribute, CAS latency and refresh interval. Matches Levetop AP-Note V1.2 page 27.
 2. The Active Window was one pixel short in each direction. REG[5Ah-5Dh] are width and height, not end coordinates, so `ConfigureActiveDisplayArea_LT()` now writes 240x960 instead of size-1. The boot edge wipe in main.c is no longer needed and is commented out (re-enable it if edge pixels return).
